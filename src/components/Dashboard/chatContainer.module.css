@@ -1,0 +1,125 @@
+.chatWrapper {
+  width: 320px;
+  height: 520px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  background: #F5F5F5;
+  font-weight: 600;
+  color: #333;
+}
+
+.userIcon {
+  color: #666;
+}
+
+.userName {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.chatContainer {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 75%;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+}
+
+.sent {
+  align-self: flex-end;
+  background-color: #0F8CE9;
+  color: white;
+  border-top-right-radius: 0;
+}
+
+.received {
+  align-self: flex-start;
+  background-color: #F5F5F5;
+  color: #111;
+  border-top-left-radius: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.meta {
+  font-size: 10px;
+  color: #333;
+  margin-top: 2px;
+  align-self: flex-end;
+}
+
+.typing {
+  font-size: 12px;
+  color: #777;
+  font-style: italic;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Input Area */
+.inputContainer {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  height: 45px;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  padding: 8px;
+  height: 100%;
+  background: #F5F5F5;
+}
+
+.actionContainer {
+  background: #F5F5F5;
+  height: 100%;
+  border-left: 1px solid rgb(169, 169, 169);
+}
+.sendBtn {
+  border: none;
+  cursor: pointer;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  height: 100%;
+}
+.sendBtn span {
+  font-size: 12px;
+  margin-right: 2px;
+}
+
+.sendBtn:hover {
+  opacity: 0.7;
+}
