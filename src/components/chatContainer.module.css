@@ -14,14 +14,28 @@
 .header {
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: space-between;
+  background: #f5f5f5;
   padding: 12px 16px;
-  border-bottom: 1px solid #ddd;
-  background: #F5F5F5;
+}
+.userName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 600;
   color: #333;
 }
 
+.clientsCount {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clientsCount p{
+  width: 100%;
+  font-size: 14px;
+}
 .userIcon {
   color: #666;
 }
@@ -49,17 +63,24 @@
   display: flex;
   flex-direction: column;
 }
-
+.nameInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin-left: 8px;
+  background: transparent;
+}
 .sent {
   align-self: flex-end;
-  background-color: #0F8CE9;
+  background-color: #0f8ce9;
   color: white;
   border-top-right-radius: 0;
 }
 
 .received {
   align-self: flex-start;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   color: #111;
   border-top-left-radius: 0;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -70,6 +91,7 @@
   color: #333;
   margin-top: 2px;
   align-self: flex-end;
+  font-style: italic;
 }
 
 .typing {
@@ -97,11 +119,11 @@
   font-size: 13px;
   padding: 8px;
   height: 100%;
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 
 .actionContainer {
-  background: #F5F5F5;
+  background: #f5f5f5;
   height: 100%;
   border-left: 1px solid rgb(169, 169, 169);
 }

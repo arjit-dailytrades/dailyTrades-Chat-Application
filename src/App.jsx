@@ -1,13 +1,14 @@
-import './App.css'
-import ChatContainer from './components/Dashboard/chatContainer'
+import "./App.css";
+import ChatContainer from "./components/chatContainer";
 
 function App() {
-
+  
   return (
-    <div className='app'>
-      <ChatContainer/>
+    <div className="app">
+      {/* <ChatApp/> */}
+      <ChatContainer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
